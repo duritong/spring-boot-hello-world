@@ -22,7 +22,7 @@ public class HelloRestController {
 
     @RequestMapping(path = "/slow", method = RequestMethod.GET)
     public String slow() throws Exception {
-	Thread.sleep(15000);
+	Thread.sleep(10000);
         return "42";
     }
     
